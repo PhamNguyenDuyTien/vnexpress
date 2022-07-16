@@ -1,0 +1,1658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VNExpress</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!-- Box icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <div class="top-header">
+                <div class="container">
+                    <div class="logo">
+                        <a href="#" title="Báo Tiếng Việt nhiều người xem nhất" target="_blank"><img src="assets/image/logo.svg" alt=""></a>
+                    </div>
+                    <span class="time-now">
+                        <div id="clock"></div>
+                    </span>
+                    <div class="right">
+                        <div class="latest">
+                            <a href="#" class="btn top-btn" title="Mới nhất">
+                                <i class='bx bx-time ic'></i>
+                                Mới nhất
+                            </a>
+                        </div>
+                        <div class="international">
+                            <a href="#" class="btn top-btn" title="International">
+                                <img src="assets/image/246x0w-200x200-1.png" class="ic" alt="">
+                                <span>International</span>
+                            </a>
+                        </div>
+                        <form action="" class="search">
+                            <input type="text" id="search" placeholder="Tìm kiếm">
+                            <button class="icon-search" type="submit">
+                                <i class='bx bx-search' ></i>
+                            </button>
+                        </form>
+                        <div class="sign-in">
+                            <div class="icon">
+                                <i class='bx bxs-user ' ></i>
+                            </div>
+                            <a href="">
+                                Đăng nhập
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-icon">
+                <i class='bx bx-menu'></i>
+            </div>
+
+            <div class="list-header active">
+                <div class="container main-nav">
+                    <ul class="list-menu">
+                        <li class="home">
+                            <a href="#home">
+                                <div class="ic">
+                                    <i class="fa-solid fa-house"></i>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="thoisu" data-id="thoisu">
+                            <a href="#thoisu" title="Thời sự">
+                                Thời sự
+                            </a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="#" title="Chính trị">Chính trị</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Dân sinh">Dân sinh</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Lao động - việc làm">Lao động việc làm</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="gocnhin" data-id="gocnhin">
+                            <a href="#gocnhin" title="Góc nhìn">
+                                Góc nhìn
+                            </a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="#" title="Giáo dục trí thức">Giáo dục trí thức</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Covid 19">Covid 19</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Môi trường">Môi trường</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="thegioi" data-id="thegioi">
+                            <a href="#thegioi" title="Thế giới">
+                                Thế giới
+                            </a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="#" title="Tư liệu">Tư liệu</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Người Việt 5 châu">Người Việt 5 châu</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Cuộc sống đó đây">Cuộc sống đó đây</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="kinhdoanh" data-id="kinhdoanh">
+                            <a href="#kinhdoanh" title="Kinh doanh">
+                                Kinh doanh
+                            </a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="#" title="Quốc tế">Quốc tế</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Doanh nghiệp">Doanh nghiệp</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Bất động sản">Bất động sản</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Chứng khoán">Chứng khoán</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="thethao" data-id="thethao">
+                            <a href="#thethao" title="Thể thao">
+                                Thể thao
+                            </a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="#" title="Bóng đá">Bóng đá</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Lịch thi đấu">Lịch thi đấu</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Các môn khác">Các môn khác</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="suckhoe" data-id="suckhoe">
+                            <a href="#suckhoe" title="Sức khỏe">
+                                Sức khỏe
+                            </a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="#" title="Tư vấn">Tư vấn</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Dinh dưỡng">Dinh dưỡng</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Di chứng Covid">Di chứng Covid</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Các bệnh">Các bệnh</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Vaccine">Vaccine</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="dulich" data-id="dulich">
+                            <a href="#dulich" title="Du lịch">
+                                Du lịch
+                            </a>
+                            <ul class="sub">
+                                <li>
+                                    <a href="#" title="Điểm đến">Điểm đến</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Ẩm thực">Ẩm thực</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Ăn và chơi">Ăn và chơi</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Ảnh">Ảnh</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Mở cửa du lịch">Mở cửa du lịch</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="all-menu">
+                            <a href="#">Tất cả<i class='bx bx-menu' ></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sub-menu-wrap">
+                <div class="container">
+                    <div class="header-menu">
+                        <span class="name-header">Tất cả chuyên mục</span>
+                        <a href="#" class="close">
+                            <span>Đóng</span>
+                            <i class='bx bx-x' ></i>
+                        </a>
+                    </div>
+                    <div class="content-left">
+                        <div class="grid-5">
+                            <ul class="sub-wrap">
+                                <li class="thoisu">
+                                    <a href="#thoisu" title="Thời sự">
+                                        Thời sự    
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Chính trị">Chính trị</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Dân sinh">Dân sinh</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Lao động - việc làm">Lao động việc làm</a>
+                                </li>
+                            </ul>
+                            <ul class="sub-wrap">
+                                <li class="gocnhin">
+                                    <a href="#gocnhin" title="Góc nhìn">
+                                        Góc nhìn    
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Chính trị">Chính trị</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Dân sinh">Dân sinh</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Lao động - việc làm">Lao động việc làm</a>
+                                </li>
+                            </ul>
+                            <ul class="sub-wrap">
+                                <li class="thoisu">
+                                    <a href="#thoisu" title="Thời sự">
+                                        Thời sự    
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Chính trị">Chính trị</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Dân sinh">Dân sinh</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Lao động - việc làm">Lao động việc làm</a>
+                                </li>
+                            </ul>
+                            <ul class="sub-wrap">
+                                <li class="thoisu">
+                                    <a href="#thoisu" title="Thời sự">
+                                        Thời sự    
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Chính trị">Chính trị</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Dân sinh">Dân sinh</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Lao động - việc làm">Lao động việc làm</a>
+                                </li>
+                            </ul>
+                            <ul class="sub-wrap">
+                                <li class="thoisu">
+                                    <a href="#thoisu" title="Thời sự">
+                                        Thời sự    
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Chính trị">Chính trị</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Dân sinh">Dân sinh</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Lao động - việc làm">Lao động việc làm</a>
+                                </li>
+                            </ul>
+                            <ul class="sub-wrap">
+                                <li class="thoisu">
+                                    <a href="#thoisu" title="Thời sự">
+                                        Thời sự    
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Chính trị">Chính trị</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Dân sinh">Dân sinh</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Lao động - việc làm">Lao động việc làm</a>
+                                </li>
+                            </ul>
+                            <ul class="sub-wrap">
+                                <li class="thoisu">
+                                    <a href="#thoisu" title="Thời sự">
+                                        Thời sự    
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Chính trị">Chính trị</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Dân sinh">Dân sinh</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Lao động - việc làm">Lao động việc làm</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-right">
+                        <div class="type-news">
+                            <ul>
+                                <li>
+                                    <a href="#" title="Podcasts">Podcasts</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Ảnh">Ảnh</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Infographics">Infographics</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="type-news bt">
+                            <ul>
+                                <li style="padding-top:20px;">
+                                    <a href="#" title="Mới nhất">Mới nhất</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Xem nhiều">Xem nhiều</a>
+                                </li>
+                                <li>
+                                    <a href="#" title="Tin nóng">Tin nóng</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-wrap">
+                <div class="container">
+                    <div class="sign-in">
+                        <div class="icon">
+                            <i class='bx bxs-user ' ></i>
+                        </div>
+                        <a href="">
+                            Đăng nhập
+                        </a>
+                    </div>
+                    <div class="header-menu">
+                        <a href="#" title="Chuyên mục" class="name-header">Chuyên mục</a>
+                    </div>
+                    <a href="#thoisusub" class="drop-down" type="button">
+                        <i class='bx bx-chevron-down' ></i>
+                    </a>
+                    <ul class="sub-menu-drop " id="#chuyen-muc">
+                        <li><a href="#" title="Thời sự">Thời sự</a></li>
+                        <li><a href="#" title="Thể thao">Thể thao</a></li>
+                        <li><a href="#" title="Khoa học">Khoa học</a></li>
+                        <li><a href="#" title="Du lịch">Du lịch</a></li>
+                        <li><a href="#" title="Công nghệ">Công nghệ</a></li>
+                        <li><a href="#" title="Giáo dục">Giáo dục</a></li>
+                        <li><a href="#" title="Giải trí">Giải trí</a></li>
+    
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+    <!-- END HEADER -->
+
+    <div id="below">
+        <!-- MAIN -->
+        <main>
+            <div class="top-story">
+                <div class="container">
+                    <div class="col-left">
+                        <div class="story-content">
+                            <div class="grid-2">
+                                <div class="col-img">
+                                    <img src="assets/image/kylianMbappe.jpg" alt="">
+                                </div>
+                                <div class="col-desc">
+                                    <h3 class="title-news">
+                                        <a href="#">Mbappe giúp PSG vượt mốc 100 bàn mùa này</a>
+                                    </h3>
+                                    <p class="description">
+                                        Nhờ 2 bàn và 1 kiến tạo của Kylian Mbappe trong 
+                                        trận hòa Strasbourg 3-3 tại League 1, PSG vượt mốc ghi 100 bàn trên mọi mặt trận.
+                                    </p>
+                                    <p class="comment">
+                                        PHÁP
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="sub-news">
+                                <div class="inner-sub">
+                                    <ul class="list-sub-new grid-3">
+                                        <li>
+                                            <h3 class="title-sub">
+                                                <a href="#">Tổng thống Sri Lanka gửi email từ chức</a>
+                                            </h3>
+                                            <p class="description">
+                                                Tổng thống Sri Lankan Gotabaya Rajapaksa đã gửi email từ chức tới Chủ tịch Quốc hội, vài giờ sau khi ông đến Singapore.
+                                            </p>
+                                        </li>
+                                        <li class="col-2-top">
+                                            <h3 class="title-sub">
+                                                <a href="#">Jackpot hơn 200 tỷ đồng có chủ</a>
+                                            </h3>
+                                            <p class="description">
+                                                Tối 14/7, Vietlott vừa xác định được khách hàng tại Đà Nẵng trúng Jackpot trị giá 205,1 tỷ đồng, đây là giải đặc biệt cao nhất từ đầu năm nay
+                                            </p>
+                                        </li>
+                                        <!-- box góc nhìn -->
+                                        <li id="gocnhin">
+                                            <a href="#goc-nhin" title="Góc nhìn">Góc nhìn</a>
+                                            <div class="item-news">
+                                                <h3 class="title-sub">
+                                                    <a href="#">'Cái lý' của phụ phí nắng nóng?</a>
+                                                </h3>
+                                                <p class="description">
+                                                    Chỉ tài xế chịu ảnh hưởng trực tiếp từ nắng nóng, nhưng phụ phí tính trên cước xe, chảy một phần vào túi nhà cung cấp công nghệ.
+                                                </p>
+                                                <div class="comment">
+                                                    <span>Vũ Ngọc Bảo</span>
+                                                    <div class="cmt">
+                                                        <i class='bx bxs-chat'></i>69
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-right"></div>
+                </div>
+            </div>
+            <div class="middle-story">
+                <div class="container">
+                    <section class="story-1">
+                        <div class="col-left">
+                            <article class="item-news">
+                                <h3 class="title-news">
+                                    <a href="#" title=" Bộ Giáo dục xác nhận đề Toán THPT bị thí sinh Đà Nẵng làm lộ">
+                                        Bộ Giáo dục xác nhận đề Toán THPT bị thí sinh Đà Nẵng làm lộ
+                                    </a>
+                                </h3>
+                                <p class="description">
+                                    Trong lúc làm bài môn Toán tốt nghiệp THPT, một thí sinh tại Đà Nẵng đã dùng điện thoại, chụp ảnh đề và đăng lên mạng nhờ giải hộ.
+                                </p>
+                            </article>
+                            <article class="item-news">
+                                <h3 class="title-news">
+                                    <a href="#" title="Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây">
+                                        Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây
+                                    </a>
+                                </h3>
+                                <p class="description">
+                                    Nga tăng cường tìm khách hàng châu Á để đối phó lệnh cấm dầu của phương Tây, gây sức ép cạnh tranh với hai đồng minh thân cận Venezuela và Iran.
+                                </p>
+                            </article>
+                            <article class="item-news">
+                                <h3 class="title-news">
+                                    <a href="#" title="PSG chuẩn bị đề nghị Messi ký hợp đồng mới">
+                                        PSG chuẩn bị đề nghị Messi ký hợp đồng mới
+                                    </a>
+                                </h3>
+                                <div class="content-news">
+                                    <div class="news-image">
+                                        <img src="assets/image/messi.jpg" alt="#messi">
+                                    </div>
+                                    <p class="description">
+                                        Đội đương kim vô địch Ligue I muốn gia hạn một năm với Lionel Messi, giữ chân anh ít nhất đến hè 2024. 
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="item-news">
+                                <h3 class="title-news">
+                                    <a href="#" title="Tổng thống Putin ký sắc lệnh đặc biệt hỗ trợ quân đội">
+                                        Tổng thống Putin ký sắc lệnh đặc biệt hỗ trợ quân đội
+                                    </a>
+                                </h3>
+                                <div class="content-news">
+                                    <div class="news-image">
+                                        <img src="assets/image/putin.jpg" alt="">
+                                    </div>
+                                    <p class="description">
+                                        Tổng thống Nga Putin ký sắc lệnh cho phép huy động tài sản dự trữ và nguồn lực kinh tế hỗ trợ quân đội hoạt động ở nước ngoài. 
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="item-news">
+                                <h3 class="title-news">
+                                    <a href="#" title="Dấu hiệu cảnh báo hoại tử xương sau mắc Covid">
+                                        Dấu hiệu cảnh báo hoại tử xương sau mắc Covid
+                                    </a>
+                                </h3>
+                                <div class="content-news">
+                                    <div class="news-image">
+                                        <img src="assets/image/hoai-tu-xuong.jpg" alt="">
+                                    </div>
+                                    <p class="description">
+                                        Tùy vùng xương bị hoại tử, bệnh nhân có thể gặp các triệu chứng như sưng mặt, đau mắt, nhức đầu, lung lay cả răng lẫn khối xương hàm, chảy mủ, sưng đau vòm miệng, có những vết loét và lộ xương hàm trên... 
+                                    </p>
+                                </div>
+                            </article>
+                            <article class="item-news">
+                                <h3 class="title-news">
+                                    <a href="#" title="Kim Duyên: 'Tôi hài lòng với danh hiệu á hậu'">
+                                        Kim Duyên: 'Tôi hài lòng với danh hiệu á hậu'
+                                    </a>
+                                </h3>
+                                <p class="description">
+                                    Á hậu 2 Miss Supranational 2022 Kim Duyên nói đạt được thành tích nhờ nỗ lực bản thân và tình yêu của khán giả.
+                                </p>
+                            </article>
+                            <article class="item-news">
+                                <h3 class="title-news">
+                                    <a href="#" title="Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây">
+                                        Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây
+                                    </a>
+                                </h3>
+                                <p class="description">
+                                    Nga tăng cường tìm khách hàng châu Á để đối phó lệnh cấm dầu của phương Tây, gây sức ép cạnh tranh với hai đồng minh thân cận Venezuela và Iran.
+                                </p>
+                            </article>
+        
+                        </div>
+                        <div class="col-right">
+                            <div class="box-category">
+                                <div class="header-box">
+                                    <h2 class="title-box">
+                                        <a href="#" title="Thể thao">
+                                            Thể thao
+                                        </a>
+                                    </h2>
+                                    <span class="sub-box">
+                                        <a href="#" title="Bóng đá">
+                                            Bóng đá
+                                        </a>
+                                    </span>
+                                    <span class="sub-box">
+                                        <a href="#" title="Lịch thi đấu">
+                                            Lịch thi đấu
+                                        </a>
+                                    </span>
+                                    <span class="sub-box">
+                                        <a href="#" title="Tennis">
+                                            Tennis
+                                        </a>
+                                    </span>
+                                    <span class="sub-box">
+                                        <a href="#" title="V-league">
+                                            V-league
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="content-box">
+                                    <div class="grid-2">
+                                        <article class="item-news">
+                                            <div class="col-img">
+                                                <img src="assets/image/lewan.jpg" alt="">
+                                            </div>
+                                            <div class="col-desc">
+                                                <h3 class="title-news">
+                                                    <a href="#" title="Bayern đồng ý bán Lewandowski cho Barca">Bayern đồng ý bán Lewandowski cho Barca</a>
+                                                </h3>
+                                                <p class="description">
+                                                    Theo Sky Sports, Barca và Bayern ngày 15/7 đạt thoả thuận chuyển nhượng tiền đạo Robert Lewandowski với tổng phí 50 triệu USD.
+                                                </p>
+                                                <p class="comment">
+                                                    ĐỨC
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="item-news border">
+                                            <h3 class="title-news">
+                                                <a href="#" title=Quang Liêm hạ thần đồng cờ vua Uzbekistan">
+                                                    Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây
+                                                </a>
+                                            </h3>
+                                            <p class="description">
+                                                Nga tăng cường tìm khách hàng châu Á để đối phó lệnh cấm dầu của phương Tây, gây sức ép cạnh tranh với hai đồng minh thân cận Venezuela và Iran.
+                                            </p>
+                                        </article>
+                                    </div>
+                                    <div class="sub-news">
+                                        <div class="inner-sub">
+                                            <ul class="list-sub-new grid-3">
+                                                <li>
+                                                    <h3 class="title-sub">
+                                                        <a href="#">Tổng thống Sri Lanka gửi email từ chức</a>
+                                                    </h3>
+                                                </li>
+                                                <li>
+                                                    <h3 class="title-sub">
+                                                        <a href="#">Jackpot hơn 200 tỷ đồng có chủ</a>
+                                                    </h3>
+                                                </li>
+                                                <li>
+                                                    <h3 class="title-sub">
+                                                        <a href="#">Jackpot hơn 200 tỷ đồng có chủ</a>
+                                                    </h3>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-category">
+                                <div class="header-box">
+                                    <h2 class="title-box">
+                                        <a href="#" title="Thể thao">
+                                            Thể thao
+                                        </a>
+                                    </h2>
+                                    <span class="sub-box">
+                                        <a href="#" title="Bóng đá">
+                                            Bóng đá
+                                        </a>
+                                    </span>
+                                    <span class="sub-box">
+                                        <a href="#" title="Lịch thi đấu">
+                                            Lịch thi đấu
+                                        </a>
+                                    </span>
+                                    <span class="sub-box">
+                                        <a href="#" title="Tennis">
+                                            Tennis
+                                        </a>
+                                    </span>
+                                    <span class="sub-box">
+                                        <a href="#" title="V-league">
+                                            V-league
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="content-box">
+                                    <div class="grid-2">
+                                        <article class="item-news">
+                                            <div class="col-img">
+                                                <img src="assets/image/kylianMbappe.jpg" alt="">
+                                            </div>
+                                            <div class="col-desc">
+                                                <h3 class="title-news">
+                                                    <a href="#">Mbappe giúp PSG vượt mốc 100 bàn mùa này</a>
+                                                </h3>
+                                                <p class="description">
+                                                    Nhờ 2 bàn và 1 kiến tạo của Kylian Mbappe trong 
+                                                    trận hòa Strasbourg 3-3 tại League 1, PSG vượt mốc ghi 100 bàn trên mọi mặt trận.
+                                                </p>
+                                                <p class="comment">
+                                                    PHÁP
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="item-news border">
+                                            <h3 class="title-news">
+                                                <a href="#" title=Quang Liêm hạ thần đồng cờ vua Uzbekistan">
+                                                    Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây
+                                                </a>
+                                            </h3>
+                                            <p class="description">
+                                                Lê Quang Liêm cầm quân đen, đánh bại Nodirbek Abdusattorov ở ván hai nội dung cờ tiêu chuẩn để trở lại đỉnh bảng Biel.
+                                            </p>
+                                        </article>
+                                    </div>
+                                    <div class="sub-news">
+                                        <div class="inner-sub">
+                                            <ul class="list-sub-new grid-3">
+                                                <li>
+                                                    <h3 class="title-sub">
+                                                        <a href="#" title="Man Utd công bố Eriksen">Man Utd công bố Eriksen</a>
+                                                    </h3>
+                                                </li>
+                                                <li>
+                                                    <h3 class="title-sub">
+                                                        <a href="#" title="Hồi kết xúc động của Woods ở The Open 2022">Hồi kết xúc động của Woods ở The Open 2022</a>
+                                                    </h3>
+                                                </li>
+                                                <li>
+                                                    <h3 class="title-sub">
+                                                        <a href="#" title="Runner cần chuẩn bị gì một tuần trước race">Runner cần chuẩn bị gì một tuần trước race</a>
+                                                    </h3>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-category">
+                                <div class="header-box">
+                                    <h2 class="title-box">
+                                        <a href="#" title="Giải trí">
+                                            Giải trí
+                                        </a>
+                                    </h2>
+                                    <span class="sub-box">
+                                        <a href="#" title="Giới sao">
+                                            Giới sao
+                                        </a>
+                                    </span>
+                                    <span class="sub-box">
+                                        <a href="#" title="Phim">
+                                            Phim
+                                        </a>
+                                    </span>
+                                    <span class="sub-box">
+                                        <a href="#" title="Nhạc">
+                                            Nhạc
+                                        </a>
+                                    </span>
+                                    <span class="sub-box">
+                                        <a href="#" title="Sách">
+                                            Sách
+                                        </a>
+                                    </span>
+                                </div>
+                                <div class="content-box">
+                                    <div class="grid-2">
+                                        <article class="item-news">
+                                            <div class="col-img">
+                                                <img src="assets/image/fashion.jpg" alt="">
+                                            </div>
+                                            <div class="col-desc">
+                                                <h3 class="title-news">
+                                                    <a href="#" title="10 ứng viên cho vương miện Hoa hậu các Dân tộc Việt Nam">
+                                                        10 ứng viên cho vương miện Hoa hậu các Dân tộc Việt Nam
+                                                    </a>
+                                                </h3>
+                                                <p class="description">
+                                                    Hồng Diễm, Vân Đình, Thúy Hằng... được khán giả dự đoán giành vương miện Hoa hậu các Dân tộc Việt Nam 2022 ... 
+                                                </p>
+                                                <p class="comment">
+                                                    VIỆT NAM
+                                                </p>
+                                            </div>
+                                        </article>
+                                        <article class="item-news border">
+                                            <h3 class="title-news">
+                                                <a href="#" title="Nhan sắc tân Hoa hậu Siêu quốc gia 2022">
+                                                    Nhan sắc tân Hoa hậu Siêu quốc gia 2022
+                                                </a>
+                                            </h3>
+                                            <p class="description">
+                                                Lalela Mswane (Nam Phi) là người đẹp da đen đầu tiên đăng quang Miss Supranational. 
+                                            </p>
+                                        </article>
+                                    </div>
+                                    <div class="sub-news">
+                                        <div class="inner-sub">
+                                            <ul class="list-sub-new grid-3">
+                                                <li>
+                                                    <h3 class="title-sub">
+                                                        <a href="#" title="Người đẹp Nam Phi đăng quang Miss Supranational 2022">
+                                                            Người đẹp Nam Phi đăng quang Miss Supranational 2022
+                                                        </a>
+                                                    </h3>
+                                                </li>
+                                                <li>
+                                                    <h3 class="title-sub">
+                                                        <a href="#" title="Kim Duyên đoạt Á hậu 2 Miss Supranational">
+                                                            Kim Duyên đoạt Á hậu 2 Miss Supranational
+                                                        </a>
+                                                    </h3>
+                                                </li>
+                                                <li>
+                                                    <h3 class="title-sub">
+                                                        <a href="#" title="Nữ diễn viên thất nghiệp vì nặng 100 kg">
+                                                            Nữ diễn viên thất nghiệp vì nặng 100 kg
+                                                        </a>
+                                                    </h3>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Podcasts -->
+                    <section class="section-container">
+                        <div class="sub-news podcasts">
+                            <div class="inner-sub">
+                                <div class="header-box">
+                                    <h2 class="title-box">
+                                        <a href="#" title="Podcasts">
+                                            Podcasts
+                                        </a>
+                                    </h2>
+                                </div>
+                                <div class="inner-sub">
+                                    <ul class="list-sub-new grid-3">
+                                        <li>
+                                            <h3 class="title-sub">
+                                                <a href="#" title="Hoại tử sọ và hàm mặt liên quan ra sao tới Covid?">
+                                                    Hoại tử sọ và hàm mặt liên quan ra sao tới Covid?
+                                                </a>
+                                            </h3>
+                                            <p class="description">
+                                                Một số nghiên cứu trên thế giới cho thấy, Covid-19 là bệnh về mạch máu nên hoại tử mặt có thể là một... 
+                                            </p>
+                                        </li>
+                                        <li class="border">
+                                            <h3 class="title-sub">
+                                                <a href="#" title="Quyền Bộ trưởng Y tế: 'Nhiều người thắc mắc khi tôi dũng cảm nhận nhiệm vụ'">
+                                                    Quyền Bộ trưởng Y tế: 'Nhiều người thắc mắc khi tôi dũng cảm nhận nhiệm vụ'
+                                                </a>
+                                            </h3>
+                                            <p class="description">
+                                                Là một nữ Bí thư Tỉnh ủy, không xuất phát từ ngành y, bà Đào Hồng Lan nói, mình nghe nhiều thắc mắc...
+                                            </p>
+                                        </li>
+                                        <li class="border">
+                                            <h3 class="title-sub">
+                                                <a href="#" title="Cải thiện cuộc yêu cho quý ông bụng bự">
+                                                    Cải thiện cuộc yêu cho quý ông bụng bự
+                                                </a>
+                                            </h3>
+                                            <p class="description">
+                                                80% số người béo phì có trục trặc về chuyện “yêu”, vậy cần làm gì để cải thiện khả năng tình dục?
+                                            </p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="section-container grid-3 bt">
+                        <div class="col">
+                            <div class="header-box">
+                                <h2 class="title-box">
+                                    <a href="#" title="Thể thao">
+                                        Thể thao
+                                    </a>
+                                </h2>
+                                <span class="sub-box">
+                                    <a href="#" title="Bóng đá">
+                                        Bóng đá
+                                    </a>
+                                </span>
+                                <span class="sub-box">
+                                    <a href="#" title="Lịch thi đấu">
+                                        Lịch thi đấu
+                                    </a>
+                                </span>
+                                <span class="sub-box">
+                                    <a href="#" title="Tennis">
+                                        Tennis
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="content-box">
+                                <article class="item-news">
+                                    <div class="col-img">
+                                        <img src="assets/image/hotro.jpg" alt="">
+                                    </div>
+                                    <div class="col-desc">
+                                        <h3 class="title-news">
+                                            <a href="#">Mbappe giúp PSG vượt mốc 100 bàn mùa này</a>
+                                        </h3>
+                                        <p class="description">
+                                            Nhờ 2 bàn và 1 kiến tạo của Kylian Mbappe trong 
+                                            trận hòa Strasbourg 3-3 tại League 1, PSG vượt mốc ghi 100 bàn trên mọi mặt trận.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="col border col-center">
+                            <div class="header-box">
+                                <h2 class="title-box">
+                                    <a href="#" title="Thể thao">
+                                        Thể thao
+                                    </a>
+                                </h2>
+                                <span class="sub-box">
+                                    <a href="#" title="Bóng đá">
+                                        Bóng đá
+                                    </a>
+                                </span>
+                                <span class="sub-box">
+                                    <a href="#" title="Lịch thi đấu">
+                                        Lịch thi đấu
+                                    </a>
+                                </span>
+                                <span class="sub-box">
+                                    <a href="#" title="Tennis">
+                                        Tennis
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="content-box">
+                                <article class="item-news">
+                                    <div class="col-img">
+                                        <img src="assets/image/anmang.jpg" alt="">
+                                    </div>
+                                    <div class="col-desc">
+                                        <h3 class="title-news">
+                                            <a href="#">Mbappe giúp PSG vượt mốc 100 bàn mùa này</a>
+                                        </h3>
+                                        <p class="description">
+                                            Nhờ 2 bàn và 1 kiến tạo của Kylian Mbappe trong 
+                                            trận hòa Strasbourg 3-3 tại League 1, PSG vượt mốc ghi 100 bàn trên mọi mặt trận.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="col border">
+                            <div class="header-box">
+                                <h2 class="title-box">
+                                    <a href="#" title="Du lịch">
+                                        Du lịch
+                                    </a>
+                                </h2>
+                                <span class="sub-box">
+                                    <a href="#" title="Bóng đá">
+                                        Bóng đá
+                                    </a>
+                                </span>
+                                <span class="sub-box">
+                                    <a href="#" title="Lịch thi đấu">
+                                        Lịch thi đấu
+                                    </a>
+                                </span>
+                                <span class="sub-box">
+                                    <a href="#" title="Tennis">
+                                        Tennis
+                                    </a>
+                                </span>
+                            </div>
+                            <div class="content-box">
+                                <article class="item-news">
+                                    <div class="col-img">
+                                        <img src="assets/image/moscow.jpg" alt="">
+                                    </div>
+                                    <div class="col-desc">
+                                        <h3 class="title-news">
+                                            <a href="#">Mbappe giúp PSG vượt mốc 100 bàn mùa này</a>
+                                        </h3>
+                                        <p class="description">
+                                            Nhờ 2 bàn và 1 kiến tạo của Kylian Mbappe trong 
+                                            trận hòa Strasbourg 3-3 tại League 1, PSG vượt mốc ghi 100 bàn trên mọi mặt trận.
+                                        </p>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="bottom-story">
+                <div class="container">
+                    <div class="bt">
+                        <div class="header-box">
+                            <h2 class="title-box">
+                                <a href="#" title="Thể thao">
+                                    Thể thao
+                                </a>
+                            </h2>
+                            <span class="sub-box">
+                                <a href="#" title="Bóng đá">
+                                    Bóng đá
+                                </a>
+                            </span>
+                            <span class="sub-box">
+                                <a href="#" title="Lịch thi đấu">
+                                    Lịch thi đấu
+                                </a>
+                            </span>
+                            <span class="sub-box">
+                                <a href="#" title="Tennis">
+                                    Tennis
+                                </a>
+                            </span>
+                            <span class="sub-box">
+                                <a href="#" title="V-league">
+                                    V-league
+                                </a>
+                            </span>
+                        </div>
+                        <div class="content-box">
+                            <div class="section-container grid-3">
+                                <article class="col">
+                                    <div class="col-img">
+                                        <img src="assets/image/car.jpg" alt="">
+                                    </div>
+                                    <div class="col-desc">
+                                        <h3 class="title-news">
+                                            <a href="#">Mbappe giúp PSG vượt mốc 100 bàn mùa này</a>
+                                        </h3>
+                                        <p class="description">
+                                            Nhờ 2 bàn và 1 kiến tạo của Kylian Mbappe trong 
+                                            trận hòa Strasbourg 3-3 tại League 1, PSG vượt mốc ghi 100 bàn trên mọi mặt trận.
+                                        </p>
+                                        <p class="comment">
+                                            PHÁP
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="col border col-center">
+                                    <div class="content-news">
+                                        <div class="col-img">
+                                            <img src="assets/image/musk.jpg" alt="">
+                                        </div>
+                                        <h3 class="title-news">
+                                            <a href="#" title="Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây">
+                                                Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div class="content-news bt">
+                                        <div class="col-img">
+                                            <img src="assets/image/CA.jpg" alt="">
+                                        </div>
+                                        <h3 class="title-news">
+                                            <a href="#" title="Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây">
+                                                Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </article>
+                                <article class="col border">
+                                    <div class="content-news grid-2">
+                                        <h3 class="title-news">
+                                            <a href="#" title="Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây">
+                                                Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây
+                                            </a>
+                                        </h3>
+                                        <div class="col-img">
+                                            <img src="assets/image/trump.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content-news grid-2 bt">
+                                        <h3 class="title-news">
+                                            <a href="#" title="Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây">
+                                                Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây
+                                            </a>
+                                        </h3>
+                                        <div class="col-img">
+                                            <img src="assets/image/maytinh.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content-news grid-2 bt">
+                                        <h3 class="title-news">
+                                            <a href="#" title="Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây">
+                                                Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây
+                                            </a>
+                                        </h3>
+                                        <div class="col-img">
+                                            <img src="assets/image/tien.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bt">
+                        <div class="header-box">
+                            <h2 class="title-box">
+                                <a href="#" title="Thể thao">
+                                    Thể thao
+                                </a>
+                            </h2>
+                            <span class="sub-box">
+                                <a href="#" title="Bóng đá">
+                                    Bóng đá
+                                </a>
+                            </span>
+                            <span class="sub-box">
+                                <a href="#" title="Lịch thi đấu">
+                                    Lịch thi đấu
+                                </a>
+                            </span>
+                            <span class="sub-box">
+                                <a href="#" title="Tennis">
+                                    Tennis
+                                </a>
+                            </span>
+                            <span class="sub-box">
+                                <a href="#" title="V-league">
+                                    V-league
+                                </a>
+                            </span>
+                        </div>
+                        <div class="content-box">
+                            <div class="section-container grid-3">
+                                <article class="col">
+                                    <div class="col-img">
+                                        <img src="assets/image/benhnhan.jpg" alt="">
+                                    </div>
+                                    <div class="col-desc">
+                                        <h3 class="title-news">
+                                            <a href="#">Mbappe giúp PSG vượt mốc 100 bàn mùa này</a>
+                                        </h3>
+                                        <p class="description">
+                                            Nhờ 2 bàn và 1 kiến tạo của Kylian Mbappe trong 
+                                            trận hòa Strasbourg 3-3 tại League 1, PSG vượt mốc ghi 100 bàn trên mọi mặt trận.
+                                        </p>
+                                        <p class="comment">
+                                            PHÁP
+                                        </p>
+                                    </div>
+                                </article>
+                                <article class="col border col-center">
+                                    <div class="content-news">
+                                        <div class="col-img">
+                                            <img src="assets/image/ceo.jpg" alt="">
+                                        </div>
+                                        <h3 class="title-news">
+                                            <a href="#" title="Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây">
+                                                Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây
+                                            </a>
+                                        </h3>
+                                    </div>
+                                    <div class="content-news bt">
+                                        <div class="col-img">
+                                            <img src="assets/image/covidevaccine.jpg" alt="">
+                                        </div>
+                                        <h3 class="title-news">
+                                            <a href="#" title="Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây">
+                                                Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây
+                                            </a>
+                                        </h3>
+                                    </div>
+                                </article>
+                                <article class="col border">
+                                    <div class="content-news grid-2">
+                                        <h3 class="title-news">
+                                            <a href="#" title="Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây">
+                                                Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây
+                                            </a>
+                                        </h3>
+                                        <div class="col-img">
+                                            <img src="assets/image/pep-klopp.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content-news grid-2 bt">
+                                        <h3 class="title-news">
+                                            <a href="#" title="Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây">
+                                                Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây
+                                            </a>
+                                        </h3>
+                                        <div class="col-img">
+                                            <img src="assets/image/recordCovid.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="content-news grid-2 bt">
+                                        <h3 class="title-news">
+                                            <a href="#" title="Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây">
+                                                Nga ngáng chân đồng minh trong cuộc chiến dầu với phương Tây
+                                            </a>
+                                        </h3>
+                                        <div class="col-img">
+                                            <img src="assets/image/sontungmtp.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="business-info">
+                <div class="container">
+                    <div class="header-box">
+                        <h3 class="title-box">
+                            <a href="#" title="Thông tin doanh nghiệp">
+                                Thông tin doanh nghiệp
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="business-wrapper">
+                        <div class="business-container">
+                            <!-- Box 1 -->
+                            <div class="box">
+                                <div class="col-img">
+                                    <img src="assets/image/Hanoivilla.jpg" alt="">
+                                </div>
+                                <div class="header-box">
+                                    <h3 class="title-box">
+                                        <a href="#" title="Thông tin doanh nghiệp">
+                                            Thông tin doanh nghiệp
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- Box 2 -->
+                            <div class="box">
+                                <div class="col-img">
+                                    <img src="assets/image/messi.jpg" alt="">
+                                </div>
+                                <div class="header-box">
+                                    <h3 class="title-box">
+                                        <a href="#" title="Thông tin doanh nghiệp">
+                                            Thông tin doanh nghiệp
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- Box 3 -->
+                            <div class="box">
+                                <div class="col-img">
+                                    <img src="assets/image/noithat.png" alt="">
+                                </div>
+                                <div class="header-box">
+                                    <h3 class="title-box">
+                                        <a href="#" title="Thông tin doanh nghiệp">
+                                            Thông tin doanh nghiệp
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- Box 4 -->
+                            <div class="box">
+                                <div class="col-img">
+                                    <img src="assets/image/vpbank.jpg" alt="">
+                                </div>
+                                <div class="header-box">
+                                    <h3 class="title-box">
+                                        <a href="#" title="Thông tin doanh nghiệp">
+                                            Thông tin doanh nghiệp
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- Box 5 -->
+                            <div class="box">
+                                <div class="col-img">
+                                    <img src="assets/image/doanhso.jpg" alt="">
+                                </div>
+                                <div class="header-box">
+                                    <h3 class="title-box">
+                                        <a href="#" title="Thông tin doanh nghiệp">
+                                            Thông tin doanh nghiệp
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- Box 6 -->
+                            <div class="box">
+                                <div class="col-img">
+                                    <img src="assets/image/thaoduoc.png" alt="">
+                                </div>
+                                <div class="header-box">
+                                    <h3 class="title-box">
+                                        <a href="#" title="Thông tin doanh nghiệp">
+                                            Thông tin doanh nghiệp
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- Box 7 -->
+                            <div class="box">
+                                <div class="col-img">
+                                    <img src="assets/image/oledTV.png" alt="">
+                                </div>
+                                <div class="header-box">
+                                    <h3 class="title-box">
+                                        <a href="#" title="Thông tin doanh nghiệp">
+                                            Thông tin doanh nghiệp
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- Box 8 -->
+                            <div class="box">
+                                <div class="col-img">
+                                    <img src="assets/image/xuhuong.jpg" alt="">
+                                </div>
+                                <div class="header-box">
+                                    <h3 class="title-box">
+                                        <a href="#" title="Thông tin doanh nghiệp">
+                                            Thông tin doanh nghiệp
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- Box 9 -->
+                            <div class="box">
+                                <div class="col-img">
+                                    <img src="assets/image/duytri.png" alt="">
+                                </div>
+                                <div class="header-box">
+                                    <h3 class="title-box">
+                                        <a href="#" title="Thông tin doanh nghiệp">
+                                            Thông tin doanh nghiệp
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                            <!-- Box 10 -->
+                            <div class="box">
+                                <div class="col-img">
+                                    <img src="assets/image/lotte.jpg" alt="">
+                                </div>
+                                <div class="header-box">
+                                    <h3 class="title-box">
+                                        <a href="#" title="Thông tin doanh nghiệp">
+                                            Thông tin doanh nghiệp
+                                        </a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="arrow-right">
+                        <i class='bx bx-chevron-right'></i>
+                    </div>
+                    <div class="arrow-left">
+                        <i class='bx bx-chevron-left'></i>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <!-- END MAIN -->
+    
+        <!-- FOOTER -->
+        <footer>
+            <div class="container">
+                <div class="footer-top">
+                    <div class="col">
+                        <ul class="list-menu-footer">
+                            <li class="item-menu">
+                                <a href="#" title="Trang chủ">
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Video">
+                                    Video
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Podcasts">
+                                    Podcasts
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Ảnh">
+                                    Ảnh
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Inforgraphic">
+                                    Inforgraphic
+                                </a>
+                            </li>
+                            <li class="item-menu bt" style="padding-top: 15px;">
+                                <a href="#" title="Mới nhất">
+                                    Mới nhất
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Xem nhiều">
+                                    Xem nhiều
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Tin nóng">
+                                    Tin nóng
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list-menu-footer">
+                            <li class="item-menu">
+                                <a href="#" title="Trang chủ">
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Video">
+                                    Video
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Podcasts">
+                                    Podcasts
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Ảnh">
+                                    Ảnh
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Inforgraphic">
+                                    Inforgraphic
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Mới nhất">
+                                    Mới nhất
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Xem nhiều">
+                                    Xem nhiều
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Tin nóng">
+                                    Tin nóng
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list-menu-footer">
+                            <li class="item-menu">
+                                <a href="#" title="Trang chủ">
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Video">
+                                    Video
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Podcasts">
+                                    Podcasts
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Ảnh">
+                                    Ảnh
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Inforgraphic">
+                                    Inforgraphic
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Mới nhất">
+                                    Mới nhất
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Xem nhiều">
+                                    Xem nhiều
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Tin nóng">
+                                    Tin nóng
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list-menu-footer">
+                            <li class="item-menu">
+                                <a href="#" title="Trang chủ">
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Video">
+                                    Video
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Podcasts">
+                                    Podcasts
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Ảnh">
+                                    Ảnh
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Inforgraphic">
+                                    Inforgraphic
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Mới nhất">
+                                    Mới nhất
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Xem nhiều">
+                                    Xem nhiều
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Tin nóng">
+                                    Tin nóng
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="list-menu-footer border">
+                            <li class="item-menu">
+                                <a href="#" title="Trang chủ">
+                                    Trang chủ
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Video">
+                                    Video
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Podcasts">
+                                    Podcasts
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Ảnh">
+                                    Ảnh
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Inforgraphic">
+                                    Inforgraphic
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Mới nhất">
+                                    Mới nhất
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Xem nhiều">
+                                    Xem nhiều
+                                </a>
+                            </li>
+                            <li class="item-menu">
+                                <a href="#" title="Tin nóng">
+                                    Tin nóng
+                                </a>
+                            </li>
+                        </ul>
+                    </div>  
+                    <div class="border">
+                        <div class="download-app">
+                            <p>Tải ứng dụng</p>
+                            <div class="button">
+                                <a href="#" class="top-btn" title="VnExpress" style="margin-left: 0;">
+                                    <img src="assets/image/246x0w-200x200-1.png" class="ic" alt="">
+                                    VnExpress
+                                </a>
+                                <a href="#" class="top-btn" title="International">
+                                    <img src="assets/image/246x0w-200x200-1.png" class="ic" alt="">
+                                    <span>International</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="contact">
+                            <p>Liên hệ</p>
+                            <div class="grid-2">
+                                <a href="#" title="Tòa soạn" class="mail">
+                                    <i class='bx bx-envelope'></i>
+                                    Tòa soạn
+                                </a>
+                                <a href="#" title="Quảng cáo" class="ads">Quảng cáo</a>
+                            </div>
+                            <a href="#" title="Hợp tác bản quyền" class="partner">
+                                <i class='bx bxs-contact'></i>
+                                Hợp tác bản quyền
+                            </a>
+                        </div>
+                        <div class="hotline">
+                            <p>Đường dây nóng</p>
+                            <div class="left">
+                                <strong>083.888.0123</strong>
+                                <p>(Hà Nội)</p>
+                            </div>
+                            <div class="right">
+                                <strong>082.233.3555</strong>
+                                <p>(TP. Hồ Chí Minh)</p>
+                            </div>
+                        </div>
+                    </div>               
+                </div>
+                <div class="footer-middle">
+                    <p>
+                        <a href="#" title="Báo điện tử">
+                            <span>Báo điện tử</span>
+                            <img src="assets/image/logo.svg" alt="">
+                        </a>
+                    </p>
+                    <div class="right">
+                        <a href="#" title="RSS">RSS</a>
+                        <span class="txt-follow">Theo dõi VnExpress trên</span>
+                        <div class="social-media">
+                            <a href="#" title="facebook" class="fb">
+                                <i class='bx bxl-facebook ic' ></i>
+                            </a>
+                            <a href="#" title="twitter" class="twt">
+                                <i class='bx bxl-twitter ic' ></i>
+                            </a>
+                            <a href="#" title="youtube" class="ytb">
+                                <i class='bx bxl-youtube ic' ></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="copyright">
+                        <div class="col-1">
+                            <p>
+                                <strong>Báo tiếng Việt nhiều người xem nhất</strong>
+                                <br>
+                                Thuộc bộ khoa học Công nghệ
+                                <br>
+                                Số giấy phép: 548/GP-BTTTT ngày 24/08/2021
+                            </p>
+                        </div>
+                        <div class="col-2">
+                            <p>
+                                Tổng biên tập: Phạm Hiếu
+                                <br>
+                                Địa chỉ: Tầng 5, Tòa nhà FPT, 17 phố Duy Tân, Cầu Giấy, Hà Nội
+                                <br>
+                                Điện thoại: 024 7300 8899 - máy lẻ 4500
+                            </p>
+                        </div>
+                        <div class="col-3">
+                            <p>&copy;1997-2022. Toàn bộ bản quyền thuộc VnExpress</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- END FOOTER -->
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
